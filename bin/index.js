@@ -6,11 +6,23 @@ const removeModule = require('../lib/removeModule');
 // console.log(process.argv);
 const command = process.argv[2];
 const module_name = process.argv[3];
+const componentExists = process.argv[4] === '-c';
+
+// with and without component
 
 if (command === 'create') {
-   createModule(module_name);
+   if (componentExists) {
+      createModule('\\component\\' + module_name);
+      console.log('\\component\\' + module_name);
+   } else {
+      createModule('\\' + module_name);
+   }
 }
 
 if (command === 'remove') {
-   removeModule(module_name);
+   if (componentExists) {
+      removeModule('\\component\\' + module_name);
+   } else {
+      removeModule('\\' + module_name);
+   }
 }
