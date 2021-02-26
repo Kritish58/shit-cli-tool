@@ -6,7 +6,7 @@ const version = require('../package.json').version;
 
 // console.log(process.argv);
 const command = process.argv[2];
-const versionIsAsked = process.argv[2] === '-v' || process.argv === '--version';
+const versionIsAsked = process.argv[2] === '-v' || process.argv[2] === '--version';
 
 const module_name = process.argv[3];
 const componentExists = process.argv[4] === '-c';
