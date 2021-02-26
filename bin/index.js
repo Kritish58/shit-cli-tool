@@ -6,11 +6,7 @@ const helpAskedFunc = require('../lib/helpAskedFunc');
 const version = require('../package.json').version;
 const newProjectFunc = require('../lib/newProject');
 
-const YELLOW_TEXT_CODE = '\x1b[33m';
-// const WHITE_TEXT_CODE = '\x1b[37m';
-// const GREEN_TEXT_CODE = '\x1b[32m';
-// const MAGENTA_TEXT_CODE = '\x1b[35m';
-// const CYAN_TEXT_CODE = '\x1b[36m';
+const chalk = require('chalk');
 
 // console.log(process.argv);
 const command = process.argv[2];
@@ -24,7 +20,7 @@ const componentExists = process.argv[4] === '-c';
 // inside or outside component
 
 if (versionAsked) {
-   console.log(YELLOW_TEXT_CODE, version);
+   console.log(chalk.bold.yellow(version));
    return;
 }
 
