@@ -4,6 +4,8 @@
 npm install -g shit-cli-v1
 ```
 
+**_if you install locally, you need to add scripts_**
+
 # Usage
 
 #### check version
