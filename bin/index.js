@@ -32,6 +32,7 @@ if (helpAsked) {
 if (createNewProject) {
    const project_name = process.argv[3] || 'new-shit-project';
    newProjectFunc(project_name);
+   return;
 }
 
 if (command === 'create') {
