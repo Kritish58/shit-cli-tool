@@ -6,31 +6,31 @@ npm install -g shit-cli-v1
 
 # Usage
 
-### create a module
+#### create a module
 
 ```
 shit create module_name
 ```
 
-### remove a module
+#### remove a module
 
 ```
 shit remove module_name
 ```
 
-### create a module inside component folder
+#### create a module inside component folder
 
 ```
 shit create module_name -c
 ```
 
-### remove a module inside component folder
+#### remove a module inside component folder
 
 ```
 shit remove module_name -c
 ```
 
-### help command
+#### help command
 
 ```
 shit --help || shit -h
