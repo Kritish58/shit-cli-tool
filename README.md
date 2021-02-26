@@ -6,6 +6,22 @@ npm install -g shit-cli-v1
 
 # Usage
 
+#### check version
+
+```
+shit --version || shit -v
+```
+
+<br>
+
+#### help command
+
+```
+shit --help || shit -h || shit
+```
+
+<br>
+
 #### create a module
 
 ```
@@ -38,20 +54,4 @@ shit remove module_name -c
 
 <br>
 
-#### check version
-
-```
-shit --version || shit -v
-```
-
-<br>
-
-#### help command
-
-```
-shit --help || shit -h || shit
-```
-
-<br>
-
-##### Happy coding 🙏🎉🎊
+##### Happy coding &nbsp;&nbsp;&nbsp; 🙏🎉🎊
