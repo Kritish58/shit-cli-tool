@@ -10,13 +10,13 @@ npm install -g shit-cli-v1
 
 #### check version
 
-`shit --version` || `shit -v`
+`shit --version` &nbsp&nbsp|&nbsp|&nbsp&nbsp `shit -v`
 
 <br>
 
 #### help command
 
-`shit --help` || `shit -h` || `shit`
+`shit --help` &nbsp;&nbsp|&nbsp|&nbsp&nbsp `shit -h` &nbsp&nbsp|&nbsp|&nbsp&nbsp `shit`
 
 <br>
 
