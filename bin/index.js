@@ -4,6 +4,7 @@ const createModule = require('../lib/createModule');
 const removeModule = require('../lib/removeModule');
 const helpAskedFunc = require('../lib/helpAskedFunc');
 const version = require('../package.json').version;
+const newProjectFunc = require('../lib/newProject');
 
 const YELLOW_TEXT_CODE = '\x1b[33m';
 // const WHITE_TEXT_CODE = '\x1b[37m';
@@ -15,6 +16,7 @@ const YELLOW_TEXT_CODE = '\x1b[33m';
 const command = process.argv[2];
 const versionAsked = process.argv[2] === '-v' || process.argv[2] === '--version';
 const helpAsked = process.argv[2] === '-h' || process.argv[2] === '--help';
+const createNewProject = process.argv[2] === 'new';
 
 const module_name = process.argv[3];
 const componentExists = process.argv[4] === '-c';
@@ -29,6 +31,11 @@ if (versionAsked) {
 if (helpAsked) {
    helpAskedFunc();
    return;
+}
+
+if (createNewProject) {
+   const project_name = process.argv[3] || 'new-shit-project';
+   newProjectFunc(project_name);
 }
 
 if (command === 'create') {
@@ -50,3 +57,5 @@ if (command === 'remove') {
 }
 
 // command not identified
+
+helpAskedFunc();

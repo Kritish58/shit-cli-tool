@@ -9,5 +9,8 @@
    "scripts": {},
    "keywords": [],
    "author": "",
-   "license": "ISC"
+   "license": "ISC",
+   "dependencies": {
+      "fs-extra": "^9.1.0"
+   }
 }
