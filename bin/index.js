@@ -13,7 +13,6 @@ const componentExists = process.argv[4] === '-c';
 if (command === 'create') {
    if (componentExists) {
       createModule('\\component\\' + module_name);
-      console.log('\\component\\' + module_name);
    } else {
       createModule('\\' + module_name);
    }
