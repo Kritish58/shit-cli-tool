@@ -49,9 +49,7 @@ shit --version || shit -v
 #### help command
 
 ```
-
 shit --help || shit -h || shit
-
 ```
 
 <br>
