@@ -1,10 +1,10 @@
 {
    "name": "shit-cli-v1",
-   "version": "1.0.0",
+   "version": "1.1.0",
    "description": "",
    "main": "index.js",
    "bin": {
-      "shit": "./bin/index.js"
+      "shit": "bin/index.js"
    },
    "scripts": {},
    "keywords": [],
