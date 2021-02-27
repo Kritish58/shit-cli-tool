@@ -1,7 +1,7 @@
 # Installation
 
 ```
-npm install -g shitcli
+npm install -g sht-cli
 ```
 
 **_if you install locally, you need to add scripts_**
