@@ -1,7 +1,7 @@
 # Installation
 
 ```
-npm install -g shit
+npm install -g shit-cli-tool
 ```
 
 **_if you install locally, you need to add scripts_**
