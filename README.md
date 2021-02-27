@@ -8,6 +8,12 @@ npm install -g shit-cli-v1
 
 # Usage
 
+#### create new project
+
+```
+shit new project-name
+```
+
 #### check version
 
 `shit --version` &nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp; `shit -v`
