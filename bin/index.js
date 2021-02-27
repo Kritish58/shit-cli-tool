@@ -37,7 +37,7 @@ if (createNewProject) {
 
 if (command === 'create') {
    if (componentExists) {
-      createModule('\\component\\' + module_name);
+      createModule('\\components\\' + module_name);
    } else {
       createModule('\\' + module_name);
    }
@@ -46,7 +46,7 @@ if (command === 'create') {
 
 if (command === 'remove') {
    if (componentExists) {
-      removeModule('\\component\\' + module_name);
+      removeModule('\\components\\' + module_name);
    } else {
       removeModule('\\' + module_name);
    }
