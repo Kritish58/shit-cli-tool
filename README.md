@@ -1,7 +1,7 @@
 # Installation
 
 ```
-npm install -g sht-cli
+npm install -g shit
 ```
 
 **_if you install locally, you need to add scripts_**
