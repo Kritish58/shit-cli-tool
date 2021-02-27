@@ -13,5 +13,9 @@
    "dependencies": {
       "chalk": "^4.1.0",
       "fs-extra": "^9.1.0"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/Kritish58/shit-cli-v1"
    }
 }
