@@ -8,22 +8,18 @@ npm install -g shit-cli-tool
 
 # Usage
 
-#### create new project
+`shit -v` || `shit --version` to check version<br>
+`shit new project-name` creates a new project<br>
+`shit module module-name` || `shit m module-name` creates a new module inside `./components` folder<br>
+`shit remove module-name` || `shit rm module-name` removes `./module-name`<br>
+`shit remove` command is able to delete any file/folder that exists in current path `./`<br>
+`shit remove module-name -c` || `shit rm module-name -c` removes `./components/module-name`<br>
+`shit service service-name module-name` to create a service inside `./components/module-name/services`<br>
 
-```
-shit new project-name
-```
+# Update to latest versions of all packages inside package.json
 
-#### check version
-
-`shit --version` &nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp; `shit -v`
-
-<br>
-
-#### help command
-
-`shit --help` &nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp; `shit -h` &nbsp;&nbsp;|&nbsp;|&nbsp;&nbsp; `shit`
-
-<br>
+`npm install -g npm-check-updates` <br>
+`ncu -u`<br>
+source: https://github.com/raineorshine/npm-check-updates <br>
 
 ##### Happy coding &nbsp;&nbsp;&nbsp; 🙏🎉🎊
