@@ -16,7 +16,7 @@ npm install -g shit-cli-tool
 `shit remove module-name -c` || `shit rm module-name -c` removes `./components/module-name`<br>
 `shit service service-name module-name` to create a service inside `./components/module-name/services`<br>
 
-# Update to latest versions of all packages inside package.json
+### To update to latest versions of all packages inside package.json
 
 `npm install -g npm-check-updates` <br>
 `ncu -u`<br>
