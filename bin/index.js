@@ -20,7 +20,8 @@ const createNewService =
    (process.argv[3] === 'service' || process.argv[3] === 's');
 
 const createNewModule =
-   (process.argv[2] === 'create' || process.argv[2] === 'c') && (process.argv[3] === 'comp' || process.argv[3] === 'c');
+   (process.argv[2] === 'create' || process.argv[2] === 'c') &&
+   (process.argv[3] === 'module' || process.argv[3] === 'm');
 
 // const createNewService = process.argv[3] === 'service' || process.argv[2] === 's';
 
