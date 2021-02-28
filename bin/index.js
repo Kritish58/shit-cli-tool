@@ -14,12 +14,12 @@ const helpAsked = process.argv[2] === '-h' || process.argv[2] === '--help';
 const createNewProject = process.argv[2] === 'new';
 
 const createNewService =
-   (process.argv[2] === 'create' || process.argv[2] === 'c') &&
-   (process.argv[3] === 'service' || process.argv[3] === 's');
+   // (process.argv[2] === 'create' || process.argv[2] === 'c') &&
+   process.argv[2] === 'service' || process.argv[2] === 's';
 
 const createNewModule =
-   (process.argv[2] === 'create' || process.argv[2] === 'c') &&
-   (process.argv[3] === 'module' || process.argv[3] === 'm');
+   // (process.argv[2] === 'create' || process.argv[2] === 'c') &&
+   process.argv[2] === 'module' || process.argv[2] === 'm';
 
 if (versionAsked) {
    console.log(chalk.bold.yellow(version));
@@ -39,8 +39,8 @@ if (createNewProject) {
 
 // service always created inside components directory
 if (createNewService) {
-   const serviceFileName = process.argv[4];
-   const moduleName = process.argv[5];
+   const serviceFileName = process.argv[3];
+   const moduleName = process.argv[4];
 
    if (!serviceFileName) {
       console.log(chalk.bold.red('please specify service name'));
@@ -58,7 +58,7 @@ if (createNewService) {
 
 // module always created inside components directory
 if (createNewModule) {
-   const module_name = process.argv[4];
+   const module_name = process.argv[3];
 
    if (!module_name) {
       console.log(chalk.bold.red('invalid module name'));
@@ -73,7 +73,7 @@ if (createNewModule) {
 
 if (process.argv[2] === 'remove' || process.argv[2] === 'rm') {
    const module_name = process.argv[3];
-   const insideComponent = process.argv[4];
+   const insideComponent = process.argv[4] === '-c';
 
    if (!module_name) {
       console.log(chalk.bold.red('module name not found'));
