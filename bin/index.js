@@ -61,7 +61,7 @@ if (createNewService) {
 }
 
 // for creating and removing modules
-if (command === 'module') {
+if (command === 'create') {
    if (componentExists) {
       createModule('\\components\\' + module_name);
    } else {
