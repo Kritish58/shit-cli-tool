@@ -23,5 +23,5 @@ npm install -g shit-cli-tool
 source: https://github.com/raineorshine/npm-check-updates <br>
 
 <br>
-<br>
+
 ##### Happy coding &nbsp;&nbsp;&nbsp; 🙏🎉🎊
