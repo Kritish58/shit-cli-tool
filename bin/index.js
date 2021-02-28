@@ -14,7 +14,7 @@ const command = process.argv[2];
 const versionAsked = process.argv[2] === '-v' || process.argv[2] === '--version';
 const helpAsked = process.argv[2] === '-h' || process.argv[2] === '--help';
 const createNewProject = process.argv[2] === 'new';
-const createNewService = process.argv[2] === 'service';
+const createNewService = process.argv[2] === 'service' || false;
 
 const module_name = process.argv[3];
 const componentExists = process.argv[4] === '-c';
@@ -61,7 +61,7 @@ if (createNewService) {
 }
 
 // for creating and removing modules
-if (command === 'create') {
+if (command === 'module') {
    if (componentExists) {
       createModule('\\components\\' + module_name);
    } else {
