@@ -8,6 +8,7 @@ const newProjectFunc = require('../lib/newProject');
 
 const chalk = require('chalk');
 const createService = require('../lib/createService');
+const createModel = require('../lib/createModel');
 
 const versionAsked = process.argv[2] === '-v' || process.argv[2] === '--version';
 const helpAsked = process.argv[2] === '-h' || process.argv[2] === '--help';
@@ -20,6 +21,8 @@ const createNewService =
 const createNewModule =
    // (process.argv[2] === 'create' || process.argv[2] === 'c') &&
    process.argv[2] === 'module' || process.argv[2] === 'm';
+
+const createNewModel = process.argv[2] === 'model';
 
 if (versionAsked) {
    console.log(chalk.bold.yellow(version));
@@ -69,6 +72,18 @@ if (createNewModule) {
 
    createModule('\\components\\' + module_name);
    return;
+}
+
+if (createNewModel) {
+   const model_name = process.argv[3];
+
+   if (!model_name) {
+      console.log(chalk.bold.red('please specify model name'));
+      console.log();
+      console.log(chalk.bold.yellow('shit model <model_name>'));
+      return;
+   }
+   createModel(model_name);
 }
 
 if (process.argv[2] === 'remove' || process.argv[2] === 'rm') {
