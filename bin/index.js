@@ -86,6 +86,7 @@ if (createNewModel) {
       return;
    }
    createModel(model_name);
+   return;
 }
 
 if (createNewRoute) {
@@ -98,6 +99,7 @@ if (createNewRoute) {
       return;
    }
    createRoute(route_name);
+   return;
 }
 
 if (process.argv[2] === 'remove' || process.argv[2] === 'rm') {
