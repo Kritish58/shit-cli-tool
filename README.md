@@ -15,7 +15,8 @@ npm install -g shit-cli-tool
 `shit remove` command is able to delete any file/folder that exists in current path `./`<br>
 `shit remove module-name -c` || `shit rm module-name -c` removes `./components/module-name`<br><br>
 `shit service service-name module-name` to create a service inside `./components/module-name/services`<br><br>
-`shit model model-name` to create a model inside `./models`<br>
+`shit model model-name` to create a model inside `./models`<br><br>
+`shit route route-name` to create a route inside `./routes`<br><br>
 
 ### To update to latest versions of all packages inside package.json
 
