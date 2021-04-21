@@ -9,6 +9,7 @@ const newProjectFunc = require('../lib/newProject');
 const chalk = require('chalk');
 const createService = require('../lib/createService');
 const createModel = require('../lib/createModel');
+const createRoute = require('../lib/createRoute');
 
 const versionAsked = process.argv[2] === '-v' || process.argv[2] === '--version';
 const helpAsked = process.argv[2] === '-h' || process.argv[2] === '--help';
@@ -23,6 +24,7 @@ const createNewModule =
    process.argv[2] === 'module' || process.argv[2] === 'm';
 
 const createNewModel = process.argv[2] === 'model';
+const createNewRoute = process.argv[2] === 'route';
 
 if (versionAsked) {
    console.log(chalk.bold.yellow(version));
@@ -84,6 +86,18 @@ if (createNewModel) {
       return;
    }
    createModel(model_name);
+}
+
+if (createNewRoute) {
+   const route_name = process.argv[3];
+
+   if (!route_name) {
+      console.log(chalk.bold.red('please specify route name'));
+      console.log();
+      console.log(chalk.bold.yellow('shit route <route_name>'));
+      return;
+   }
+   createRoute(route_name);
 }
 
 if (process.argv[2] === 'remove' || process.argv[2] === 'rm') {
