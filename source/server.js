@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
-const chalk = require('chalk');
 const path = require('path');
 const logger = require('./logs/logger');
 const app = require('./app');
@@ -14,9 +13,9 @@ mongoose.connect(MONGODB_URI, { useUnifiedTopology: true, useNewUrlParser: true 
       // process.exit(1);
       return;
    }
-   console.log(chalk.bold.blue('mongodb connected'));
+   logger.alert('mongodb connected');
 });
 
 app.listen(PORT, () => {
-   console.log(chalk.bold.yellow('server is running on port', PORT));
+   logger.alert('server is running on port ' + PORT);
 });
