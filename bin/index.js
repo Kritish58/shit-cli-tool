@@ -102,25 +102,27 @@ if (createNewRoute) {
    return;
 }
 
-if (process.argv[2] === 'remove' || process.argv[2] === 'rm') {
-   const module_name = process.argv[3];
-   const insideComponent = process.argv[4] === '-c';
+//THE COMMENTED PART BELOW IS ABOUT REMOVING, SOMETHING THOUGHT TO BE NOT VERY USEFUL, INSTRUCTIONS COMMENTED OUT IN README
 
-   if (!module_name) {
-      console.log(chalk.bold.red('module name not found'));
-      console.log();
-      console.log(chalk.bold.yellow('shit remove <module_name>'));
-      return;
-   }
+// if (process.argv[2] === 'remove' || process.argv[2] === 'rm') {
+//    const module_name = process.argv[3];
+//    const insideComponent = process.argv[4] === '-c';
 
-   if (insideComponent) {
-      removeModule('\\components\\' + module_name);
-      return;
-   }
+//    if (!module_name) {
+//       console.log(chalk.bold.red('module name not found'));
+//       console.log();
+//       console.log(chalk.bold.yellow('shit remove <module_name>'));
+//       return;
+//    }
 
-   removeModule('\\' + module_name);
-   return;
-}
+//    if (insideComponent) {
+//       removeModule('\\components\\' + module_name);
+//       return;
+//    }
+
+//    removeModule('\\' + module_name);
+//    return;
+// }
 
 // command not identified
 
